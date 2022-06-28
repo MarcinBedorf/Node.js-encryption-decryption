@@ -10,7 +10,8 @@ The decrypt.js program accepts the file name (assuming that it is encrypted) and
 **node decrypt.js home/importantDataFile.txt mypassword**
 
 It overwrites the indicated text file. The program tries to decrypt the data by reading the JSON.
------
+
+----
 The program verifies that the encrypted data has not been replaced.
 
 The checksum (in this case the SHA512 hash function used) is saved in JSON when encrypting the file in encrypt.js. The decrypt.js program gets the created checksum and checks if the restored file has the same.
